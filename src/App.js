@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+
 // import store from './redux/store';
 import { useDispatch } from 'react-redux';
 
@@ -11,12 +11,7 @@ import { setPizzas } from './redux/actions/pizzas';
 function App() {
     const dispatch = useDispatch();
 
-    React.useEffect(() => {
-        axios.get('http://localhost:3001/pizzas').then(({ data }) => {
-            // setPizzas(data.pizzas);
-            dispatch(setPizzas(data));
-        });
-    }, []);
+    React.useEffect(() => {}, []);
 
     return (
         <div className="wrapper">

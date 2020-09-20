@@ -1,4 +1,5 @@
 import { createStore } from 'redux';
+import thunk from 'react-thunk';
 
 import rooteReducer from './reducers/';
 
